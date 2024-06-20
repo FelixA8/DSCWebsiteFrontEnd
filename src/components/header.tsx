@@ -43,7 +43,7 @@ const HeaderComponent = () => {
   ];
   return (
     <>
-      <header className="flex flex-row p-2 px-8 justify-between border-b border-black h-auto">
+      <header className="flex flex-row p-2 px-8 justify-between">
         <div
           id="logo-section"
           className="flex flex-row align-middle justify-center space-x-3"
