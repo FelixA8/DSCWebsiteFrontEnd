@@ -10,11 +10,13 @@ import NumFact from "@/ui/main/main-numfacts-section";
 import { DefaultSeo } from "next-seo";
 import Image from "next/image";
 import { ToastContainer } from "react-toastify";
-
+import { PageWrapper } from '@/app/page-wrapper';
 export default function Home() {
   return (
     <>
+    <PageWrapper>
       <EventsHero />
+    </PageWrapper>
     </>
   );
 }
