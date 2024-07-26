@@ -26,8 +26,8 @@ const MainHero = () => {
           CLUB
         </motion.h1>
         <Vector6 />
-        <p className="text-[#7C5295] border-l-4 p-2 mt-10 md:text-lg">
-          <Typing
+        <Typing
+          className="text-[#7C5295] border-l-4 p-2 mt-10 md:text-lg"
             text={[
               // "Data science is the domain of study that deals with vast volumes of data using modern tools and techniques to find unseen patterns, derive meaningful information, and make business decisions.",
               
@@ -41,7 +41,6 @@ const MainHero = () => {
             eraseSpeed={50}
             eraseDelay={3000}
           />
-        </p>
         <motion.button
           className="text-left bg-303F9A w-fit px-7 py-2 rounded-3xl text-white font-medium mt-5 tracking-wide md:text-xl transition-transform duration-100 ease-in-out hover:bg-gradient-to-r hover:from-303F9A hover:to-[#D4A5D4] hover:scale-110"
           whileHover={{ scale: 1.1 }}
