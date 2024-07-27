@@ -12,8 +12,6 @@ import Image from "next/image";
 import { ToastContainer } from "react-toastify";
 import { PageWrapper } from '@/app/page-wrapper';
 
-
-
 export default function Home() {
   return (
     <>
