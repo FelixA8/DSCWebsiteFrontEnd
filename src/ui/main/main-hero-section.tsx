@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 const poppins700 = Poppins({ weight: "700", subsets: ["latin"] });
 const poppins500 = Poppins({ weight: "500", subsets: ["latin"] });
+const poppins300 = Poppins({ weight: "300", subsets: ["latin"] });
 
 const MainHero = () => {
   return (
@@ -13,7 +14,7 @@ const MainHero = () => {
       <div className="flex flex-col md:w-[100%] xl:my-auto">
         <motion.h1
           className={
-            "text-7xl min-h-max md:text-7xl lg:text-9xl text-303F9A " +
+            "text-7xl min-h-max md:text-7xl lg:text-8xl text-303F9A " +
             poppins700.className
           }
           initial={{ rotateX: 0, rotateY: 0, perspective: 1000 }}
@@ -27,23 +28,23 @@ const MainHero = () => {
         </motion.h1>
         <Vector6 />
         <Typing
-          className="text-[#7C5295] border-l-4 p-2 mt-10 md:text-lg"
-            text={[
-              // "Data science is the domain of study that deals with vast volumes of data using modern tools and techniques to find unseen patterns, derive meaningful information, and make business decisions.",
-              
-              "Join Data Science Club",
-              "Interesting Events",
-              "Monthly Class",
-              "Be a Member",
-              "Be an Activist"
-            ]}
-            speed={50}
-            eraseSpeed={50}
-            eraseDelay={3000}
-          />
+          className={"text-[#7C5295] border-l-4 p-2 mt-10 md:text-lg"+ poppins500.className}
+          text={[
+            // "Data science is the domain of study that deals with vast volumes of data using modern tools and techniques to find unseen patterns, derive meaningful information, and make business decisions.",
+
+            "Join Data Science Club",
+            "Interesting Events",
+            "Monthly Class",
+            "Be a Member",
+            "Be an Activist"
+          ]}
+          speed={50}
+          eraseSpeed={50}
+          eraseDelay={3000}
+        />
         <motion.button
           className="text-left bg-303F9A w-fit px-7 py-2 rounded-3xl text-white font-medium mt-5 tracking-wide md:text-xl transition-transform duration-100 ease-in-out hover:bg-gradient-to-r hover:from-303F9A hover:to-[#D4A5D4] hover:scale-110"
-          whileHover={{ scale: 1.1 }}
+          whileHover={{ scale: 1}}
           transition={{ type: "spring", stiffness: 500, damping: 20 }}
         >
           Read More
