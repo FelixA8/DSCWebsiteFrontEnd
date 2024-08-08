@@ -12,10 +12,6 @@ const variants = {
 };
 const AboutusMission = () => {
   const sectionRef = useRef(null);
-  const { inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
   return (
     <motion.section
       ref={sectionRef}
