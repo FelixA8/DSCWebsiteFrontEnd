@@ -71,36 +71,6 @@ const HeaderComponent: FC = () => {
               </Link>
             );
           })}
-
-          {/* <Link
-          href={"/auth/login"}
-          className={`w-36 h-3/5 my-auto flex flex-col align-middle justify-center ${path === "/auth/login" ? "bg-303F9A rounded-xl" : ""}`}
-        >
-          <motion.span
-            initial={{ color: '#767676', scale: 1 }}
-            animate={{ color: path === "/auth/login" ? '#FFFFFF' : '#767676', fontWeight: path === "/auth/login" ? 'bold' : 'normal' }}
-            whileHover={{ scale: 1.1 }}  // Only scale on hover, no color change
-            transition={{ duration: 0.3 }}
-            className={`${poppins.className} text-center text-xl ${path === "/auth/login" ? '' : 'text-[#767676]'}`}
-          >
-            Login
-          </motion.span>
-        </Link>
-        <Link
-          href={"/profile"}
-          className="flex flex-row my-auto w-36 h-3/5 space-x-2 hover:cursor-pointer"
-        >
-          <Image
-            src={"https://static01.nyt.com/images/2024/03/05/autossell/00TB-MEOWS/00TB-MEOWS-square640.jpg"}
-            width={40}
-            height={40}
-            alt="Profile Pic"
-            className="rounded-full my-auto"
-          />
-          <span className="w-full text-center flex break-words align-middle my-auto">
-            Felix
-          </span>
-        </Link> */}
         </nav>
         <div
           className="xl:hidden peer transition flex flex-col justify-center align-middle text-center"

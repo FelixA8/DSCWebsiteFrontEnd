@@ -8,7 +8,6 @@ const poppins = Poppins({ weight: "500", subsets: ["latin"] });
 
 interface Props {
 	navlinks: {
-		logo: string;
 		link: string;
 		name: string;
 	}[];
@@ -38,12 +37,6 @@ const SideNav: FC<Props> = ({ navlinks, user }) => {
 								key={index}
 								passHref
 							>
-								<Image
-									src={navobject.logo}
-									alt={navobject.name}
-									width={20}
-									height={20}
-								/>
 								<span
 									className={`my-auto text-xl text-[#767676] `}
 								>

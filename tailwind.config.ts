@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import defaultTheme from "tailwindcss/defaultTheme";
 module.exports = {
 	content: [
 		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,6 +9,7 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			
 			backgroundImage: {
 				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
 				"gradient-conic":
@@ -24,7 +26,12 @@ module.exports = {
 				D9D9D9: "#D9D9D9",
 			},
 			boxShadow: {
+				white: '0 4px 6px rgba(255, 255, 255, 0.4)',
 				"right-shift": "8px 8px 20px -1px rgba(0,0,0,0.5)",
+			},
+			fontFamily: {
+                sans: ['var(--font-inter)'],
+				mono: ['var(--font-roboto-mono)'],
 			},
 		},
 	},
