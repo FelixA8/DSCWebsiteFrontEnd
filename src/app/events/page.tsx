@@ -1,6 +1,7 @@
 'use client'
 
 import EventsHero from "@/ui/events/events-hero-section";
+import EventsInfo from "@/ui/events/events-info-section"
 import MainDemand from "@/ui/main/main-demands-section";
 import MainDivision from "@/ui/main/main-division-section";
 import MainExploreDS from "@/ui/main/main-exploreds-section";
@@ -16,6 +17,7 @@ export default function Home() {
     <>
     <PageWrapper>
       <EventsHero />
+      <EventsInfo />
     </PageWrapper>
     </>
   );
