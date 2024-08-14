@@ -1,8 +1,8 @@
 const EventsHero = () => {
   return (
-    <section className=" min-h-screen w-full flex flex-col align-middle relative">
+    <section className="w-full flex flex-col align-middle">
       <h1 className="mt-11 md:mt-20 text-center text-3xl font-semibold text-[#2A6FA6] md:text-6xl">
-        Upcoming Events. On Process
+        Upcoming Events
       </h1>
     </section>
   );
