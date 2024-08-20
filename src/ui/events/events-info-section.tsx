@@ -49,7 +49,7 @@ const EventCard: React.FC<EventCardProps> = ({ buttonText, imageUrl, eventType, 
       className="w-full h-40 object-cover"
     />
     <div className="p-6">
-        <h3 className="text-left text-md font-semibold mb-1 text-blue-600">[{eventType}] <span className="text-41ABC3">{eventTitle}</span></h3>
+      <h3 className="text-left text-md font-semibold mb-1 text-blue-600">[{eventType}] <span className="text-41ABC3">{eventTitle}</span></h3>
       <div className="text-gray-500 mb-1 flex items-center">
         <img src="/icons/eventicons/icon_calendar.svg" alt="Date Icon" className="w-4 h-4 mr-2" />
         {date}
