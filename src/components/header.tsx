@@ -47,7 +47,7 @@ const HeaderComponent: FC = () => {
           alt="Main-Logo"
           width={100}
           height={100}
-          className="my-auto h-10 w-10"
+          className="h-10 w-10"
         />
         <nav className="flex-row align-middle hidden xl:flex h-full">
           {navlinks.map((navobject, index) => {
