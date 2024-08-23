@@ -3,7 +3,9 @@ import { Poppins } from "next/font/google";
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer"; // Use react-intersection-observer
 
+const poppins700 = Poppins({ weight: "700", subsets: ["latin"] });
 const poppins500 = Poppins({ weight: "500", subsets: ["latin"] });
+const poppins300 = Poppins({ weight: "300", subsets: ["latin"] });
 
 const useNumberCounter = (
   target: number,
@@ -51,11 +53,11 @@ const NumFact = () => {
     <section
       className={`p-14 space-y-10 flex flex-col align-middle justify-center lg:flex-row lg:pr-0 lg:space-x-3 ${poppins500.className}`}
     >
-      <h2 className="text-4xl font-semibold text-303F9A text-center lg:text-left lg:h-fit lg:my-auto lg:text-5xl">
-        Our numbers tell <br /> more about data science
+      <h2 className="text-4xl font-bold text-303F9A text-center lg:text-left lg:h-fit lg:my-auto lg:text-5xl">
+        Our Numbers Tell <br /> More About Data Science
       </h2>
-      <div className="bg-[#F9ECEC] rounded-3xl w-full p-10 lg:rounded-r-none">
-        <div className="divide-y-4 text-303F9A border-303FA flex flex-col lg:flex-row lg:divide-y-0 lg:divide-x-4">
+      <div className="bg-[#303F9A] rounded-3xl w-full p-10 lg:rounded-r-none">
+        <div className="divide-y-4 text-white border-303FA flex flex-col lg:flex-row lg:divide-y-0 lg:divide-x-4">
           <motion.div
             ref={ref}
             className="text-center space-y-2 p-5"
