@@ -6,7 +6,7 @@ const inter700 = Inter({ weight: "700", subsets: ["latin"] });
 const inter500 = Inter({ weight: "500", subsets: ["latin"] });
 const inter300 = Inter({ weight: "300", subsets: ["latin"] });
 
-const DepartmentHero: React.FC<{ department:Department }> = ({ department }) => {
+const DepartmentHero: React.FC<{ department: Department }> = ({ department }) => {
     return <>
         <section className="bg-white">
             <div className="flex flex-col md:flex-row md:justify-between max-w-screen-xl px-4 mx-auto py-16">
@@ -63,10 +63,12 @@ const DepartmentHero: React.FC<{ department:Department }> = ({ department }) => 
                                     <p className="mb-6 font-light text-gray-300 lg:mb-8 md:text-lg lg:text-xl">{subdivision.description}</p>
 
                                 </div>
-                                <div className="w-full flex flex-col md:items-end md:pr-12">
-                                    <Image className="py-4" src={`${subdivision.picImage[0]}`} alt="Marvel" width={250} height={250} />
-                                    <p className={`font-bold md:text-lg lg:text-xl ${inter700.className} text-white`} >{subdivision.picName[0]}</p>
-                                    <p className="font-light text-gray-300 md:text-lg lg:text-xl">PIC of {subdivision.name}</p>
+                                <div className="w-full flex flex-col md:items-end text-center md:pr-12">
+                                    <div className="flex flex-col items-center">
+                                        <Image className="py-4" src={`${subdivision.picImage[0]}`} alt="Marvel" width={250} height={250} />
+                                        <p className={`font-bold md:text-lg lg:text-xl ${inter700.className} text-white`} >{subdivision.picName[0]}</p>
+                                        <p className="font-light text-gray-300 md:text-lg lg:text-xl">PIC of {subdivision.name}</p>
+                                    </div>
                                 </div>
                             </div>
                         }))

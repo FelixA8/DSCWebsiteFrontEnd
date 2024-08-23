@@ -5,7 +5,7 @@ const FooterComponent = () => {
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div className="md:flex md:justify-between">
                 <div className="mb-6 md:mb-0">
-                    <a href="/" className="flex items-center">
+                    <a href="#" className="flex items-center">
                         <Image src="/main-logo.png" width={30} height={30} className="h-8 me-3" alt="FlowBite Logo" />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Data Science Club</span>
                     </a>
@@ -42,7 +42,7 @@ const FooterComponent = () => {
             <div className="sm:flex sm:items-center sm:justify-between">
                 <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">Copyright © 2024 Data Science Club. All rights reserved.
                 </span>
-                
+
             </div>
         </div>
     </footer>

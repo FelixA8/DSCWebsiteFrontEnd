@@ -36,12 +36,12 @@ const HeaderComponent: FC = () => {
     // { link: "/classes", name: "Classes" },
     // { link: "/articles", name: "Articles" },
     { link: "/aboutus", name: "About Us" },
-    { link: "/contact", name: "Contact Us" },
+    { link: "#footer", name: "Contact Us" },
   ];
 
   return (
     <header className={`fixed top-0 w-full z-10 transition-all duration-300 ${scrolled ? 'bg-white bg-opacity-70 backdrop-filter backdrop-blur-lg' : 'bg-transparent'}`}>
-      <div className="flex flex-row justify-start mx-12 py-3 items-center">
+      <div className="flex flex-row justify-between md:justify-start mx-12 py-3 items-center">
         <Image
           src={"/main-logo.png"}
           alt="Main-Logo"
@@ -49,7 +49,7 @@ const HeaderComponent: FC = () => {
           height={100}
           className="h-10 w-10"
         />
-        <nav className="flex-row align-middle hidden xl:flex h-full">
+        <nav className="flex-row align-middle hidden md:flex h-full">
           {navlinks.map((navobject, index) => {
             const isActive = path === navobject.link;
             return (
@@ -73,7 +73,7 @@ const HeaderComponent: FC = () => {
           })}
         </nav>
         <div
-          className="xl:hidden peer transition flex flex-col justify-center align-middle text-center"
+          className="md:hidden peer transition flex flex-col justify-around align-middle text-center"
           tabIndex={1}
         >
           <Image
