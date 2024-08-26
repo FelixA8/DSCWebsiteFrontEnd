@@ -31,15 +31,15 @@ const AboutusVisionMission = () => {
             variants={variants}
             className="mx-16"
         >
-            <div className="flex">
-                <div className="w-1/2 p-4">
+            <div className="flex flex-col md:flex-row">
+                <div className="w-full md:w-1/2 p-4">
                     <div className="w-full bg-white p-4 border rounded-lg shadow">
                         <h1 className={`text-3xl lg:text-5xl ${inter700.className} text-303F9A mb-10 text-center`}>VISION</h1>
                         <p className={`text-md lg:text-xl ${inter300.className} text-black`}>The vision of the Data Science Club is to become one of the largest organizations at Bina Nusantara University through innovation and achievement.</p>
                     </div>
                 </div>
                 <div className="w-px bg-gray-400 mx-4"></div>
-                <div className="w-1/2 p-4">
+                <div className="w-full md:w-1/2 p-4">
                     <div className="w-full bg-white p-4 border rounded-lg shadow">
                         <h1 className={`text-3xl lg:text-5xl ${inter700.className} text-303F9A mb-10 text-center`}>MISSION</h1>
                         <p className={`text-md lg:text-xl ${inter300.className} text-black`}>1. Provide a platform that facilitates learning and exchanging ideas for its members.</p>

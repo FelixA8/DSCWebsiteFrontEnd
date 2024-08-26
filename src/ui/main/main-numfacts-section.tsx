@@ -54,7 +54,7 @@ const NumFact = () => {
       className={`p-14 space-y-10 flex flex-col align-middle justify-center lg:flex-row lg:pr-0 lg:space-x-3 ${poppins500.className}`}
     >
       <h2 className="text-4xl font-bold text-303F9A text-center lg:text-left lg:h-fit lg:my-auto lg:text-5xl">
-        Our Numbers Tell <br /> More About Data Science
+        Our Numbers Tell More About Data Science
       </h2>
       <div className="bg-[#303F9A] rounded-3xl w-full p-10 lg:rounded-r-none">
         <div className="divide-y-4 text-white border-303FA flex flex-col lg:flex-row lg:divide-y-0 lg:divide-x-4">
@@ -73,7 +73,7 @@ const NumFact = () => {
             >
               ${count95k.toLocaleString()}K
             </motion.h2>
-            <p className="text-2xl font-normal lg:text-left lg:text-xl">
+            <p className="text-xl md:text-2xl font-normal lg:text-left lg:text-xl">
               The median starting salary for a data scientist remains high.
             </p>
           </motion.div>
@@ -92,7 +92,7 @@ const NumFact = () => {
             >
               {count60Percent}%
             </motion.h2>
-            <p className="text-2xl font-normal lg:text-left lg:text-xl">
+            <p className="text-xl md:text-2xl font-normal lg:text-left lg:text-xl">
               of companies around the world use data and analytics to drive
               process and cost-efficiency (MicroStrategy, 2020).
             </p>
@@ -112,7 +112,7 @@ const NumFact = () => {
             >
               {count2_7M.toLocaleString()}M
             </motion.h2>
-            <p className="text-2xl font-normal lg:text-left lg:text-xl">
+            <p className="text-xl md:text-2xl font-normal lg:text-left lg:text-xl">
               open jobs in data analysis, data science and related careers in
               2020 (source: IBM).
             </p>

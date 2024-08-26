@@ -38,7 +38,7 @@ const AboutusDepartment = () => {
       viewport={{ once: true, amount: 0.1 }}
       variants={variant1}
       transition={{ staggerChildren: 0.3, duration: 1 }}
-      className={`bg-[#00031E] w-screen flex flex-col align-middle px-10 space-y-6 lg:px-14 pt-10 ${inter500.className}`}
+      className={`bg-[#00031E] w-screen flex flex-col align-middle px-10 space-y-6 lg:px-14 py-10 ${inter500.className}`}
     >
       <motion.h1
         initial="hidden"
