@@ -38,7 +38,7 @@ const AboutusDepartment = () => {
       viewport={{ once: true, amount: 0.1 }}
       variants={variant1}
       transition={{ staggerChildren: 0.3, duration: 1 }}
-      className={`bg-[#00031E] min-h-screen w-screen flex flex-col align-middle p-10 space-y-6 lg:p-14 ${inter500.className}`}
+      className={`bg-[#00031E] w-screen flex flex-col align-middle px-10 space-y-6 lg:px-14 py-10 ${inter500.className}`}
     >
       <motion.h1
         initial="hidden"
@@ -52,36 +52,20 @@ const AboutusDepartment = () => {
         initial="hidden"
         whileInView="show"
         variants={variant2}
-        className="flex-col flex justify-center items-center text-center text-white p-8 rounded-3xl space-y-5 lg:space-y-10 lg:p-12 lg:min-h-[400px] lg:justify-start"
+        className="flex-col flex justify-center items-center text-center text-white rounded-3xl lg:space-y-10 lg:p-12 lg:justify-start"
       >
-        <div className="grid grid-cols-3 justify-center gap-8">
-
+        <div className="flex flex-wrap justify-center gap-6 mt-10">
           {
-            sliceFirstThreeDepartment.map((department) => <Link href={`/aboutus/${department.slug}`}>
+            listDepartment.map((department) => <Link href={`/aboutus/${department.slug}`}>
               <Image
                 alt="Computer"
                 src={`${department.logo}`}
                 width={300}
                 height={300}
-                className="hidden lg:block bg-white hover:-translate-y-3 transition-all hover:cursor-pointer hover:shadow-white border rounded-md"
+                className="block bg-white hover:-translate-y-3 transition-all hover:cursor-pointer hover:shadow-white border rounded-md"
               />
             </Link>)
           }
-        </div>
-        <div className="flex justify-center items-center">
-          <div className="grid grid-cols-2 justify-center gap-8">
-            {
-              sliceLastTwoDepartment.map((department) => <Link href={`/aboutus/${department.slug}`}>
-                <Image
-                  alt="Computer"
-                  src={`${department.logo}`}
-                  width={300}
-                  height={300}
-                  className="hidden lg:block bg-white hover:-translate-y-3 transition-all hover:cursor-pointer hover:shadow-white border rounded-md"
-                />
-              </Link>)
-            }
-          </div>
         </div>
       </motion.div>
     </motion.section>

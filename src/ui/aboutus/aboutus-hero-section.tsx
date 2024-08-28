@@ -19,7 +19,7 @@ const AboutusHero = () => {
       viewport={{ once: true, amount: 0.1 }}
       transition={{ staggerChildren: 0.3, duration: 1 }}
       className={
-        "w-screen flex flex-col align-middle justify-between text-white bg-no-repeat bg-cover bg-opacity-60 overflow-x-hidden relative lg:bg-[center_bottom_-20rem] lg:p-14 " +
+        "w-screen flex flex-col align-middle justify-between text-white bg-no-repeat bg-cover bg-opacity-60 overflow-x-hidden relative lg:bg-[center_bottom_-20rem] mt-11 md:mt-20" +
         inter700.className
       }
     >

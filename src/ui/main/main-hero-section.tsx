@@ -11,10 +11,10 @@ const poppins300 = Poppins({ weight: "300", subsets: ["latin"] });
 const MainHero = () => {
   return (
     <section className="flex flex-col py-20 overflow-x-hidden justify-center lg:min-h-screen lg:flex-row lg:space-x-[20%] g:bg-[center_bottom_-20rem] lg:p-14 mx-0 lg:mx-12">
-      <div className="flex flex-col md:w-[100%] text-center lg:my-auto lg:text-start items-center lg:items-start mb-8 lg:mb-0">
+      <div className="flex flex-col md:w-[100%] justify-center text-center lg:text-start items-center lg:items-start mb-8 lg:mb-0">
         <motion.h1
           className={
-            "text-7xl min-h-max md:text-7xl lg:text-8xl text-303F9A " +
+            "text-7xl lg:text-8xl text-303F9A " +
             poppins700.className
           }
           initial={{ rotateX: 0, rotateY: 0, perspective: 1000 }}
@@ -44,12 +44,14 @@ const MainHero = () => {
           eraseSpeed={50}
           eraseDelay={3000}
         />
-        <button
+        <a
+          href="#footer"
           className="text-left bg-303F9A w-fit px-7 py-2 rounded-3xl text-white font-medium mt-5 md:text-xl hover:bg-white hover:text-[#303F9A] hover:border transition "
         >
           Reach us
-        </button>
+        </a>
       </div>
+      
       <ImageSlider />
     </section>
   );

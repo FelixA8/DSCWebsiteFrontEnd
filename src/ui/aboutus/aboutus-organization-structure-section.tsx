@@ -42,7 +42,7 @@ const AboutusOrganizationStructure = () => {
             initial="hidden"
             whileInView="show"
             variants={variants}
-            className="mx-16 mt-10"
+            className="mx-16 mt-10 flex flex-col items-center"
         >
             <motion.h1
                 initial="hidden"
@@ -52,7 +52,7 @@ const AboutusOrganizationStructure = () => {
             >
                 ORGANIZATION STRUCTURE 2024/2025
             </motion.h1>
-            <Image src={"/organization-structure.png"} width={1600} height={900} alt="structure"/>
+            <Image src={"/organization-structure.svg"} width={1600} height={900} alt="structure"/>
         </motion.div>
     </motion.section>
 }

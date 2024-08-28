@@ -7,6 +7,7 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/ui/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/flowbite/**/*.js",
     flowbite.content(),
   ],
   theme: {
@@ -37,7 +38,5 @@ module.exports = {
     },
   },
 
-  plugins: [
-	flowbite.plugin(),
-  ],
+  plugins: [flowbite.plugin()],
 };

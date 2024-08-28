@@ -14,7 +14,7 @@ const MainDemand = () => {
       <div className="flex flex-col lg:flex-row items-center">
         <Grafic1 />
         <div className="bg-[#367CFF] bg-opacity-10 rounded-3xl p-5 border-b-4 border-[#407BFF]">
-          <p className={`${poppins300.className} font-medium  text-303F9A text-xl text-center p-4 rounded-b-md`}>
+          <p className={`${poppins300.className} font-medium  text-303F9A text-sm md:text-xl text-center p-4 rounded-b-md`}>
             Data science experts are needed in virtually every job sector not
             just in technology. In fact, the five biggest tech companies Google,
             Amazon, Apple, Microsoft, and Facebook only employ one-half of one
