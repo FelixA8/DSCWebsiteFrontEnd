@@ -1,37 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DSCWebsiteFrontEnd
 
-## Getting Started
+**DSCWebsiteFrontEnd** is the official website for the Data Science Club (DSC). This platform serves as a hub for club members and aspiring data scientists to access resources, events, and information related to data science.
 
-First, run the development server:
+The website is built using **Next.js** and **Tailwind CSS**, providing a seamless and efficient user experience with server-side rendering and utility-first CSS styling.
+
+## Features
+
+- **Responsive Design**: The website is designed to be mobile-friendly and responsive, ensuring accessibility across various devices.
+- **Event Management**: Display upcoming events, workshops, and meetups organized by the Data Science Club.
+- **Resource Hub**: Access a collection of learning materials, tutorials, and resources for aspiring data scientists.
+- **Member Portal**: A dedicated section for club members to log in and access exclusive content and resources.
+- **Contact Form**: Easily reach out to club organizers for inquiries, collaborations, or feedback.
+
+## Technology Stack
+
+- **Next.js**: A powerful React framework for building server-rendered applications.
+- **React**: A JavaScript library for building user interfaces.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **Axios**: For making API requests to fetch data dynamically.
+- **Firebase (optional)**: For real-time database and user authentication (if implemented).
+
+## Installation
+
+### Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js installed on your development environment.
+- AWS account and S3 Bucket set up for asset storage.
+- Google Cloud account for cloud integration services.
+- Basic knowledge of Next.js and React.js.
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/FelixA8/DSCWebsiteFrontEnd.git
+   cd PersonalPortfolioWeb
+
+2. Install Dependencies:
+
+   ```bash
+   npm install
+   
+3. Configure environment variables:
+   
+   Create a .env.local file to store sensitive environment variables like AWS credentials, Google Cloud API keys, etc.
+   
+4. Run the development server:
+
+   ```bash
+   npm run dev
+
+Open http://localhost:3000 to view the site locally.
+
+## Project Structure
+
+The project is organized as follows:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+src/
+├── app/              # Main application logic and routing
+├── components/       # Reusable components for the website
+└── ui/               # User interface components and styles
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# DSCWebsiteFrontEnd
